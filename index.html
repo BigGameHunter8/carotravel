@@ -21,21 +21,11 @@
   </head>
   <body>
     <div class="wrapper">
-        <div class="menu center-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-4">
-                        <p>Call center (+373)22800855</p>
-                    </div>
-
-                    <div class="col-xs-12 col-md-12 col-md-4">
-                        <p>Orange (373)60800855 </p>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-4">
-                        <p>Moldcell (373)79800855 </p>
-                    </div>
-                </div>
+        <div class="menu">
+            <div class="menu_items">
+                <span>Call Center <a href="tel:+37322800855">(+373)22800855</a></span>
+                <span>Orange <a href="tel:+37360800855">(+373)60800855</a></span>
+                <span>Moldcell <a href="tel:+37379800855">(+373)79800855</a></span>
             </div>
         </div>
 
@@ -52,34 +42,61 @@
         <div class="slider">
             <div class="container-fluid">
                 <div class="row">
-                    <!-- <div class="col-md-12"> -->
-                        <div class="sl">
-                            <div class="sl_slide">
-                                <img src="img/1_slide.jpg" alt="" class="img-responsive">
-                            </div>
-
-                            <!-- <div class="sl_slide">
-                                <img src="img/2_slide.jpg" alt="" class="img-responsive">
-                            </div> -->
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000"> 
+                              
+                                
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                  <div class="item active">
+                                    <img src="img/1_slide.jpg" alt="first_slide" class="img-responsive">
+                                  </div>
+                              
+                                  <div class="item">
+                                    <img src="img/2_slide.jpg" alt="second_slide" class="img-responsive">
+                                  </div>
+                               
+                                </div>
                         </div>
-                    </div>
-                <!-- </div> -->
             </div>
         </div>
 
-        <div class="first_section">
+        <div class="first">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h3>Caro Travel este mai mult decât o agenție de turism</h3>
+                        <div class="top-line"></div>
+                        <h2 class="left_head">Caro Travel este mai mult decât o agenție de turism.</h2>
                     </div>
-
+                    
                     <div class="col-md-6">
-
+                        <p class="right_txt">
+                                Caro Travel este mai mult decât o agenție de turism. Este o companie ce vă oferă voiaje memorabile cu amintiri plăcute și emoții pozitive.
+                                Avem un cocktail cu destinații de vis, servicii de primă clasă și momente deosebite — toate acestea pentru Dvs.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="second">
+    
+                <div class="first_part">
+                    <div class="col-md-8" style="padding:0;">
+                        <img src="img/2_img_1.jpg" alt="" class="img-responsive f_image" id="img">
+                        
+                        <p class="f_par" id="par">
+                                Orientarea permanentă spre satisfacerea cerințelor clienților Caro Travel, ne transformă într-un prieten de încredere.
+                        </p>
+                    </div>
+        
+                    
+                        
+                    
+                </div>
+            
+        </div>
+
+       
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
