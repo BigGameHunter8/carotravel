@@ -1,7 +1,7 @@
 @menu-color:#473a88;
 @lines: #c89c2d;
 @txt: #57565b;
-@small_text:626166;
+@small_text:#626166;
 @font: 'Raleway', sans-serif;
 @second: #f7f7f7;
 
@@ -20,13 +20,25 @@
         font-weight: @semi;
         font-size: 15px;
 
+        @media only screen and (max-width:320px){
+            height: 70px;
+            margin-top: -10px;
+        }
+
         .menu_items{
             margin-left: 390px;
             padding-top:12px;
-            span{
+
+            @media only screen and (max-width : 320px){
+                margin-left:0;
+                padding:0;
+            }
+
+            li{
                 color:white;
-                margin-top: 10px;
                 padding-right: 30px;
+                float: left;
+                list-style: none;
 
                 a{
                     color:white;
@@ -86,8 +98,13 @@
         }
     }
 
-    .second{
-         margin-top: -50px;
+    .second_section{
+        margin-top: -100px;
+         background-color: @second;
+         padding-top: 10px;
+
+        .second{
+        margin-top: 50px;
          background-color: @second;
          max-width: 100%;
          height: 1500px;
@@ -95,40 +112,90 @@
          background-image: url("../img/second_bg.png");
          background-repeat: no-repeat;
          background-size: contain;
+         
 
-        .part_one img {
-            width:40%;
-            position: relative;
-            margin-top: -5%;
-            display: inline-block;
-        }
+            .first_part{
+                padding: 0;
+    
+                img{
+                    width: 100%;
+                    height: auto;
+                    min-height:390px;
+                    margin-top: -100px;
 
-        .part_one p{
-           display: inline-block;
-           position: relative;
-           padding: 60px 70px;
-           border:6px solid @lines;
-           width: 32%;
-           margin-left: -2%;
-        }
+                    @media only screen and (max-width:320px){
+                        min-height: 250px;
+                    }
+                }
+    
+                p{
+                    width:77%;
+                    color:@txt;
+                    font-family: @font;
+                    font-size: 15px;
+                    font-weight: @medium;
+                    margin-top: 0px;
+                    border: 6px solid @lines;
+                    padding: 70px 90px;
+                    margin-left: -50px;
+                    
+                    @media only screen and (max-width:320px){
+                        width: 100%;
+                        padding:30px;
+                        margin: 0;
+                        margin-top:-20px;
+                    }
 
-        .part_two{
-
-            img{
-                display:inline-block;
-                position: relative;
-                float:right;
-                width:40%;
-                margin-top: 10%;
+                }
             }
 
-            p{
-                display:inline-block;
-                margin-top: 20%;
-                margin-left: 20%;
-                font-size: 15px;
-                color:@txt;
-                font-weight: @medium;
+            .second_part{
+                margin-top: 100px;
+                
+                p{
+                    font-family: @font;
+                    color:@txt;
+                    font-size: 15px;
+                    font-weight: @medium;
+                    margin-top: 160px;
+                    margin-left: 300px;
+                    width:80%;
+
+                    @media only screen and (max-width:320px){
+                        margin-left: 0;
+                        width: 100%;
+                        margin-top: -50px;
+                    }
+                }
+
+                img{
+                    width: 80%;
+                    min-height: 241px;
+                }
+            }
+
+            .third_part{
+
+                margin-top: 80px;
+                img{
+                    width:50%;
+                    height: auto;
+                    min-height:400px;
+                    margin-left: 310px;
+                }
+
+                p{
+                    color:@txt;
+                    font-family:@font;
+                    font-size: 15px;
+                    font-weight: @medium;
+                    margin-top: 150px;
+                    border:6px solid @lines;
+                    padding: 300px 250px;
+                    margin-top: -150px;
+                    margin-left: -270px;
+                    width: 99%;
+                }
             }
         }
     }   
@@ -136,3 +203,4 @@
 
 
 }
+
