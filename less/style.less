@@ -5,6 +5,13 @@
 @font: 'Raleway', sans-serif;
 @second: #f7f7f7;
 
+@form_border: #e8e8e8;
+@form_input: #828185;
+@form_font: 'Open Sans', sans-serif;
+
+@footer_txt: #c3c2c2;
+
+
 @normal: 400;
 @medium:500;
 @semi:600;
@@ -89,12 +96,14 @@
             color:@txt;
             font-size: 29px;
             font-weight: @bold;
+            line-height: 36px;
         }
 
         .right_txt{
             font-size: 15px;
             font-weight: @medium;
             color: @txt;
+            line-height: 26px;
         }
     }
 
@@ -107,8 +116,9 @@
         margin-top: 50px;
          background-color: @second;
          max-width: 100%;
-         height: 1500px;
-         min-height: 1250px;
+         height: auto;
+         //min-height: 1250px;
+         padding-bottom: 50px;
          background-image: url("../img/second_bg.png");
          background-repeat: no-repeat;
          background-size: contain;
@@ -125,6 +135,7 @@
 
                     @media only screen and (max-width:320px){
                         min-height: 250px;
+                        margin-top: -30px;
                     }
                 }
     
@@ -138,6 +149,7 @@
                     border: 6px solid @lines;
                     padding: 70px 90px;
                     margin-left: -50px;
+                    line-height: 26px;
                     
                     @media only screen and (max-width:320px){
                         width: 100%;
@@ -160,6 +172,7 @@
                     margin-top: 160px;
                     margin-left: 300px;
                     width:80%;
+                    line-height: 26px;
 
                     @media only screen and (max-width:320px){
                         margin-left: 0;
@@ -171,17 +184,38 @@
                 img{
                     width: 80%;
                     min-height: 241px;
+                    position: relative;
+                    z-index: 999;
+
+                    @media only screen and (max-width){
+                        width: 100%;
+                        min-height: 300px;
+                        margin-left: 0;
+                        position:absolute;
+                    }
                 }
             }
 
             .third_part{
 
                 margin-top: 80px;
+
+                @media only screen and (max-width:320px){
+                    
+                }
+
                 img{
                     width:50%;
                     height: auto;
                     min-height:400px;
                     margin-left: 310px;
+
+                    @media only screen and (max-width: 320px){
+                        margin-left: 0;
+                        min-height: 200px;
+                        width: 100%;
+                        margin-top: 110px;
+                    }
                 }
 
                 p{
@@ -191,14 +225,161 @@
                     font-weight: @medium;
                     margin-top: 150px;
                     border:6px solid @lines;
-                    padding: 300px 250px;
-                    margin-top: -150px;
+                    padding: 220px 220px;
+                    margin-top: -130px;
                     margin-left: -270px;
-                    width: 99%;
+                    z-index: 998;
+                    width: 100%;
+                    line-height: 26px;
+
+                    @media only screen and (max-width:320px){
+                        padding: 15px;
+                        margin-left: 0;
+                        margin-top: -450px;
+
+                    }
                 }
             }
         }
     }   
+
+
+    .third_section{
+        margin-top: 200px;
+        margin-left: -60px;
+
+        @media only screen and (max-width:320px){
+            margin-top: 0;
+            margin-left: 0;
+        }
+        .border{
+            width: 730px;
+            height: 585px;
+            border:6px solid @lines;
+            position: relative;
+            z-index: 500;
+            margin-top: -500px;
+            margin-left: -100px;
+        }
+
+        .plane{
+            position: relative;
+            margin-left: 40px;
+            z-index: 501;
+        }
+        .man{
+            border:1px solid red;
+        }
+
+        .bagage{
+            position: relative;
+            margin-top: -360px;
+            z-index: 502;
+            margin-left: -200px;
+        }
+
+        .pre-last{
+            margin-top: 190px;
+            margin-left: 50px;
+
+            @media only screen and (max-width:320px){
+                margin-top: 140px;
+                margin-left: 0;
+            }
+            p{
+                color:@txt;
+                font-size: 15px;
+                font-weight: @medium;
+                margin-left: -200px;
+                line-height: 26px;
+
+                @media only screen and (max-width:320px){
+                    //margin-top: 140px;
+                    margin-left: 0px;
+                    width: 100%;
+                    
+                }
+            }
+        }
+    }
+
+    .form_section{
+        margin-top: 80px;
+        
+        .top_line{
+            height: 3px;
+            width: 200px;
+            background-color: @lines;
+            margin-left: -120px;
+        }
+
+        h1{
+            font-size: 29px;
+            color:@txt;
+            font-weight: @bold;
+            margin-left: -120px;
+            padding-bottom: 60px;
+        }
+
+        input[type="text"]{
+            border:1px solid transparent;
+            color: @form_input;
+            font-size: 13px;
+            font-family: @form_font;
+            display:block;
+            border-bottom:1px solid @form_border;   
+            width: 100%;
+            margin-left: -140px;
+            padding: 8px;
+
+            &:focus{
+                border:none;
+            }
+
+            &:active{
+                border:none;
+            }
+        }
+
+        textarea{
+            border:none;
+            border-bottom:1px solid @form_border;
+            width: 100%;
+        }
+
+        input[type="submit"]{
+            border:none;
+            background-color: @lines;
+            color:#fff;
+            padding: 15px 45px;
+            margin-left: 450px;
+        }
+    }
+
+    .footer{
+        margin-top: 100px;
+        margin-bottom: 45px;
+        ul{
+            margin-left: 350px;
+            li{
+                list-style: none;
+                float:left;
+                padding: 0 10px;
+                a{
+                    img{
+
+                    }
+                }
+            }
+        }
+
+        span{
+            margin-top: 35px;
+            display: block;
+            color:@footer_txt;
+            margin-left: -110px;
+        }
+    }
 
 
 
