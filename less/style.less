@@ -17,6 +17,8 @@
 @semi:600;
 @bold:700;
 
+
+
 .wrapper{
     font-family: @font;
     .menu{
@@ -36,9 +38,27 @@
             margin-left: 390px;
             padding-top:12px;
 
+            @media only screen and (max-width:480px){
+                margin-left: 0;
+                padding: 0;
+            }
+
             @media only screen and (max-width : 320px){
                 margin-left:0;
                 padding:0;
+            }
+
+            ul{
+
+                margin-left: 170px;
+
+                @media only screen and (max-width:480px){
+                    margin-left: 0;
+                }
+
+                @media only screen and (max-width:320px){
+                    margin-left: 25px;
+                }
             }
 
             li{
@@ -104,6 +124,10 @@
             font-weight: @medium;
             color: @txt;
             line-height: 26px;
+
+            @media only screen and (max-width:1200px){
+                margin-top: 30px;
+            }
         }
     }
 
@@ -111,6 +135,10 @@
         margin-top: -100px;
          background-color: @second;
          padding-top: 10px;
+
+         @media only screen and (max-width:1200px){
+            margin-top: -400px;
+        }
 
         .second{
         margin-top: 50px;
@@ -122,16 +150,22 @@
          background-image: url("../img/second_bg.png");
          background-repeat: no-repeat;
          background-size: contain;
-         
+   
 
             .first_part{
                 padding: 0;
+
+                
     
                 img{
                     width: 100%;
                     height: auto;
                     min-height:390px;
                     margin-top: -100px;
+
+                    @media only screen and (max-width:480px){
+                        min-height: 250px;
+                    }
 
                     @media only screen and (max-width:320px){
                         min-height: 250px;
@@ -150,6 +184,14 @@
                     padding: 70px 90px;
                     margin-left: -50px;
                     line-height: 26px;
+
+                    @media only screen and (max-width:1200px){
+                        width: 100%;
+                        padding: 50px 70px;
+                    }
+
+                    
+
                     
                     @media only screen and (max-width:320px){
                         width: 100%;
@@ -163,6 +205,8 @@
 
             .second_part{
                 margin-top: 100px;
+
+               
                 
                 p{
                     font-family: @font;
@@ -173,6 +217,16 @@
                     margin-left: 300px;
                     width:80%;
                     line-height: 26px;
+
+                    @media only screen and (max-width:1200px){
+                        margin-left: 150px;
+                        margin-top: 0;
+                    }
+
+                    @media only screen and (max-width:480px){
+                        margin-left: 0;
+                        width: 100%;
+                    }
 
                     @media only screen and (max-width:320px){
                         margin-left: 0;
@@ -187,7 +241,7 @@
                     position: relative;
                     z-index: 999;
 
-                    @media only screen and (max-width){
+                    @media only screen and (max-width:320px){
                         width: 100%;
                         min-height: 300px;
                         margin-left: 0;
@@ -201,14 +255,20 @@
                 margin-top: 80px;
 
                 @media only screen and (max-width:320px){
-                    
+                    margin-top: 450px;
                 }
 
                 img{
-                    width:50%;
+                    width:47%;
                     height: auto;
-                    min-height:400px;
+                    min-height:100px;
                     margin-left: 310px;
+                    
+
+                    @media only screen and (max-width:1200px){
+                        margin-left: 150px;
+                        min-height: 300px;
+                    }
 
                     @media only screen and (max-width: 320px){
                         margin-left: 0;
@@ -231,6 +291,11 @@
                     z-index: 998;
                     width: 100%;
                     line-height: 26px;
+
+                    @media only screen and (max-width:1200px){
+                        padding: 140px 140px;
+
+                    }
 
                     @media only screen and (max-width:320px){
                         padding: 15px;
@@ -260,30 +325,65 @@
             z-index: 500;
             margin-top: -500px;
             margin-left: -100px;
+
+            @media only screen and (max-width:1200px){
+               width: 500px;
+               height: 400px;
+               margin-top: -300px;
+               margin-left: -10px;
+            }
+
+            @media only screen and (max-width:320px){
+                width: 150px;
+                height: 150px;
+                margin-top: -100px;
+                margin-left: 50px;
+            }
         }
 
         .plane{
             position: relative;
             margin-left: 40px;
             z-index: 501;
-        }
-        .man{
-            border:1px solid red;
-        }
 
+            @media only screen and (max-width:1200px){
+                width: 100%;
+            }
+
+            @media only screen and (max-width:320px){
+                width: 80%;
+                margin-left: 80px;
+            }
+        }
+        
         .bagage{
             position: relative;
             margin-top: -360px;
             z-index: 502;
             margin-left: -200px;
+
+            @media only screen and(max-width:1200px){
+                width: 60%;
+                margin-top:-200px;
+                margin-left: -100px;
+            }
+
+            @media only screen and (max-width:320px){
+                margin-left: 0;
+                margin-top: -130px;
+            }
         }
 
         .pre-last{
             margin-top: 190px;
             margin-left: 50px;
 
+            @media only screen and (max-width:1200px){
+                margin-left: 0;
+            }
+
             @media only screen and (max-width:320px){
-                margin-top: 140px;
+                margin-top: 170px;
                 margin-left: 0;
             }
             p{
@@ -292,6 +392,10 @@
                 font-weight: @medium;
                 margin-left: -200px;
                 line-height: 26px;
+
+                @media only screen and (max-width:1200px){
+                    margin-left: 20px;
+                }
 
                 @media only screen and (max-width:320px){
                     //margin-top: 140px;
@@ -305,12 +409,20 @@
 
     .form_section{
         margin-top: 80px;
+
+        @media only screen and (max-width:320px){
+            margin-top: 50px;
+        }
         
         .top_line{
             height: 3px;
             width: 200px;
             background-color: @lines;
             margin-left: -120px;
+
+            @media only screen and (max-width:1200px){
+                margin-left: 0;
+            }
         }
 
         h1{
@@ -319,6 +431,10 @@
             font-weight: @bold;
             margin-left: -120px;
             padding-bottom: 60px;
+
+            @media only screen and (max-width:1200px){
+                margin-left: 0;
+            }
         }
 
         input[type="text"]{
@@ -339,13 +455,34 @@
             &:active{
                 border:none;
             }
+
+            @media only screen and (max-width:1200px){
+                margin-left: -20px;
+            }
         }
 
         textarea{
             border:none;
             border-bottom:1px solid @form_border;
             width: 100%;
+
+            &::-webkit-input-placeholder{
+                color: @form_input;
+                font-size: 13px;
+                font-family: @form_font;
+            }
+        
+            @media only screen and (max-width:1200px){
+                margin-top: 10px;
+            }
+
+            @media only screen and (max-width:320px){
+                margin-left: -10px;
+            } 
         }
+
+
+
 
         input[type="submit"]{
             border:none;
@@ -353,6 +490,10 @@
             color:#fff;
             padding: 15px 45px;
             margin-left: 450px;
+
+            @media only screen and (max-width:320px){
+                margin-left: 50px;
+            }
         }
     }
 
@@ -361,6 +502,10 @@
         margin-bottom: 45px;
         ul{
             margin-left: 350px;
+
+            @media only screen and (max-width:320px){
+                margin-left: -20px;
+            }
             li{
                 list-style: none;
                 float:left;
@@ -378,6 +523,10 @@
             display: block;
             color:@footer_txt;
             margin-left: -110px;
+
+            @media only screen and (max-width:320px){
+                margin-left: 0;
+            }
         }
     }
 
